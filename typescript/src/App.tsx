@@ -1,24 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Country, Person } from './Components/Person';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <Person
+        name="Himanshu"
+        email="himanshukapoor898@gmail.com"
+        age={21}
+        isMarried={false}
+        friends={["Xyz", "Abc", "123"]}
+        country = {Country.India}
+      />
     </div>
   );
 }
