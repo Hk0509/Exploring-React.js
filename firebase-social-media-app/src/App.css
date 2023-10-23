@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 .App {
   text-align: center;
 }
@@ -35,4 +40,82 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.navbar {
+  background-color: rgb(103, 57, 255);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  min-height: 60px;
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+}
+
+.links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.user p {
+  margin-right: 10px;
+  font-weight: 500;
+}
+
+.user img {
+  border-radius: 50%;
+}
+
+.SignIn {
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.SignIn p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.SignIn button {
+  background-color: #4285f4; 
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.SignIn button:hover {
+  background-color: #357ae8; 
+}
+
+.logout {
+  margin-left: 5px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
